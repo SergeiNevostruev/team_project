@@ -27,7 +27,7 @@
 
 /* layout */
 .container {
-  max-width: 1340px; /*чтобы содержимое сжималось*/
+  max-width: 1320px; /*чтобы содержимое сжималось*/
   min-width: 320px;
   padding-left: 10px;
   padding-right: 10px;
