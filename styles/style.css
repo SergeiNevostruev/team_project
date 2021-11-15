@@ -2,11 +2,13 @@
   --color-border: #E9E9E9;
   --color-dull: #333333;
   --color__orange: #ED6303;
-  --color__orange--hover: #fba266;  
+  --color__orange--hover: #fba266;
   --color-white: #ffffff;
   --color-gray: #B6B1A3;
+  --color-dark: #070707;
 
   --font-size-links: 18px;
+  --font-size-title: 48px;
 }
 
 
@@ -36,6 +38,27 @@
   padding-right: 10px;
   box-sizing: content-box;
   margin: 0 auto;
+}
+
+/* =============== Контейнер для основного контента всего сайта  =============== */
+.container-content {
+  width: 1218px;
+  margin: 0 auto;
+}
+
+/* =============== Отступы для загаловков и их стилизация на всем сайте ============== */
+.style__title {
+  margin: 60px 0 60px 120px;
+
+  font-family: 'Tenor Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  font-size: var(--font-size-title);
+  text-transform: uppercase;
+  color: var(--color-dark)
 }
 
 .flex-sb-aicenter {
@@ -129,6 +152,12 @@
 
 .header-icons__item:not(:last-child) {
   margin-right: 10px;
+}
+
+/* =================== Первый экран =================== */
+
+.style__title span {
+  color: var(--color__orange)
 }
 
 
@@ -241,12 +270,12 @@
   }
 
 .mailto__item::placeholder {
-  color: var(--color-gray);  
-} 
+  color: var(--color-gray);
+}
 
 .mailto__item:focus::placeholder {
-  color: var(--color-dull);  
-} 
+  color: var(--color-dull);
+}
 
 .mailto__item:focus {
   border-bottom: 3px solid var(--color__orange);
