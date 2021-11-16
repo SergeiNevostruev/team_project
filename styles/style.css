@@ -160,6 +160,120 @@
   color: var(--color__orange)
 }
 
+/* page-aboutcompany */
+
+.page-aboutcompany {
+  margin-top: 100px;
+}
+
+.aboutcompany-info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.aboutcompany__title {
+  font-family: 'Tenor Sans';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  color: var(--color-dark);
+  line-height: 140%;
+  margin-left: 102px;
+  margin-right: 139px;
+  margin-top: 0;
+}
+
+.aboutcompany__text {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--color-dull);
+  margin: 0;
+}
+
+.aboutcompany-link {
+  display: flex;
+  align-items: center;
+  margin-left: 520px;
+  margin-top: 30px;
+}
+
+.aboutcompany-link a {
+  font-size: var(--font-size-links);
+  color: var(--color__orange);
+}
+
+.aboutcompany-link a:hover {
+  text-decoration: underline 2px solid var(--color__orange);
+  transition: all 0.25s ease;
+}
+
+.aboutcompany-link p {
+  margin: 0;
+}
+
+.aboutcompany__arrow {
+  margin-left: 5px;
+}
+
+.aboutcompany-images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 110px;
+}
+
+.aboutcompany-images__left {
+  margin-top: 30px;
+}
+
+.aboutcompany-images__right {
+  margin-top: 86px;
+}
+
+.aboutcompany-images h2 {
+  font-family:'PT Sans';
+  font-size: 20px;
+  margin: 30px 0 7px 20px;
+  color: var(--color-dark);
+}
+
+.list__text {
+  font-family: 'PT Sans';
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 20px 20px;
+  line-height: 140%;
+  color: var(--color-gray);
+} 
+
+.list__price {
+  font-family: 'PT Sans';
+  font-size: 25px;
+  color: var(--color-dark);
+  margin: 0 0 0 20px;
+  font-weight: 700;
+}
+
+/*page-best-offer*/
+
+.page-best-offer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.best-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-images h2 {
+  font-family:'PT Sans';
+  font-size: 20px;
+  margin: 30px 0 7px 20px;
+  color: var(--color-dark);
+}
 
 /*подвал*/
 
