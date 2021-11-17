@@ -32,8 +32,9 @@
 
 /* layout */
 .container {
-  max-width: 1320px; /*чтобы содержимое сжималось*/
-  min-width: 320px;
+  /* max-width: 1320px; */
+  width: 1320px; /*нужно будет уточнить как правильно*/
+  /* min-width: 320px; */
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: content-box;
@@ -273,6 +274,82 @@
   font-size: 20px;
   margin: 30px 0 7px 20px;
   color: var(--color-dark);
+}
+
+/*Подписка*/
+
+.page-subscription {
+  background-color: var(--color__orange);
+  height: 400px;
+  }
+
+.page-subscription__banner {
+  margin-left: -150px;
+}
+
+.page-subscription__content {
+  display: flex;
+  align-items: center;
+}
+
+.subscription {
+  width: 440px;
+  margin: 0 10px 0 73px;
+}
+
+.subscription h2 {
+  margin-bottom: 10px;
+  color: var(--color-white);
+  font-size: 25px;
+  
+}
+
+.subscription p {
+  margin-bottom: 35px;
+  color: var(--color-white);
+  font-size: 18px;
+}
+
+.subscription__flexform {
+  display: flex;
+  align-items: center;
+}
+
+.page-subscription__email {
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  width: 300px;
+  height: 45px;
+  appearance: none; /* обнуление базовых стилей */
+  border: 2px solid var(--color-white);
+  border-radius: 5px;
+  background-color: var(--color-white);
+  line-height: 28px;
+  color: var(--color-gray);
+  transition: border 0.25s ease;
+}
+
+.page-subscription__email:focus {
+  font-size: 16px;
+  border: 2px solid var(--color__orange--hover);
+  color: var(--color-dull);
+  outline: none;
+  font-weight: 600;
+  box-shadow: 0 0 5px var(--color-white);
+}
+
+.page-subscription__button {
+  margin-left: 20px;
+}
+
+.page-subscription__button:hover circle {
+  fill: var(--color__orange);
+  stroke: var(--color-white);
+}
+
+.page-subscription__button:hover path{
+  stroke: var(--color-white);
 }
 
 /*подвал*/
