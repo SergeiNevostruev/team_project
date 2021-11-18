@@ -30,6 +30,11 @@
   color: var(--color-dull);
 }
 
+.width__content {
+  width: 1218px;
+  margin: 0 auto;
+}
+
 /* layout */
 .container {
   max-width: 1320px; /*чтобы содержимое сжималось*/
@@ -41,14 +46,10 @@
 }
 
 /* =============== Контейнер для основного контента всего сайта  =============== */
-.container-content {
-  width: 1218px;
-  margin: 0 auto;
-}
 
 /* =============== Отступы для загаловков и их стилизация на всем сайте ============== */
 .style__title {
-  margin: 60px 0 60px 120px;
+  margin: 60px 0 60px 150px;
 
   font-family: 'Tenor Sans', sans-serif;
   font-style: normal;
@@ -89,66 +90,46 @@
 
 .page-header a:hover {
   color: var(--color__orange);
-  text-shadow: var(--color-border) 1px 0 5px;
   transition: all 0.25s ease;
 }
 
-.page-header a:hover path {
+.header-icons a:hover path {
   stroke: var(--color__orange);
   transition: all 0.25s ease;
 }
 
-
-.page-header--height {
-  height: 80px;
-}
-
-.page-header__mainmenu {
-  height: 100%;
-  width: 65%;
-}
-
 .page-header__logo {
   border-right: 1px var(--color-border) solid;
-  padding-right: 50px;
-  height: 100%;
+  padding-right: 40px;
+  height: 80px;
   display: inline-flex;
   align-items: center;
 }
 
-.page-header__nav {
-  width: 100%;
-}
-
 .mainmenu {
   display: flex;
-  justify-content: space-around;
-  margin: 0;
-
   list-style-type: none;
-  max-width: 560px;
-}
-
-.mainmenu__item {
-  margin: 0 10px;
 }
 
 .page-header__tel {
   display: inline-flex;
-  margin: 0 10px 0 50px;
+  margin-right: 40px;
 }
 
-.page-header__tools {
-  height: 100%;
-  width: 35%;
+.mainmenu__item {
+  padding-right: 30px;
 }
 
 .header-icons {
   border-left: 1px var(--color-border) solid;
-  padding-left: 50px;
-  height: 100%;
-  width: 40%;
+  height: 80px;
+  box-sizing: border-box;
 }
+
+.header-icons a {
+  padding-left: 40px;
+}
+
 
 .header-icons__item:not(:last-child) {
   margin-right: 10px;
@@ -159,6 +140,84 @@
 .style__title span {
   color: var(--color__orange)
 }
+
+/* =================== Стилизация вкладок =================== */
+.first-screen__tab {
+  display: flex;
+  align-items: center;
+  margin-left: 140px;
+  overflow: hidden;
+}
+
+
+/* ================= Стиль кнопок, используемых для открытия содержимого вкладки ===============*/
+.first-screen__tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-right: 68px;
+  transition: 0.3s;
+
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size-links);
+  line-height: 23px;
+  text-align: center;
+}
+
+.tab__item {
+  cursor: pointer;
+}
+
+.tab__item svg {
+  display: block;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.tab__item button {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.tab__item button:hover {
+  color: var(--color__orange);
+}
+
+.tab__item button.active {
+  color: var(--color__orange);
+}
+
+.tab__link {
+  color: var(--color__orange);
+  text-decoration:none;
+}
+
+.tab__link:hover {
+  color: #FF9F5B;
+  transition: all 0.25s ease;
+}
+
+
+/* ================= Стиль содержимого вкладки ===============*/
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 
 
 /*подвал*/
