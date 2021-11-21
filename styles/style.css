@@ -275,7 +275,10 @@
 
 .aboutcompany-info {
   display: flex;
-  align-items: center;
+}
+
+.aboutcompany-info h1 {
+  margin-top: 0;
 }
 
 .aboutcompany__title {
