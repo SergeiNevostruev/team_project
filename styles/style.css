@@ -349,7 +349,7 @@
   color: var(--color-dark);
 }
 
-.list__text {
+.text-style {
   font-family: 'PT Sans';
   font-size: 16px;
   font-weight: 400;
@@ -465,6 +465,86 @@
 .page-subscription__button:hover path{
   stroke: var(--color-white);
 }
+
+
+/* Блог */
+.page-blog__content {
+  margin-top: 100px;
+  margin-bottom: 104px;
+}
+
+.page-blog-list {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start
+}
+
+.page-blog__title {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.page-blog__item {
+  width: 386px;
+}
+
+.page-blog__text {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px var(--color-border) solid;
+}
+
+.page-blog__text p {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.blog-t-style {
+  font-family: 'PT Sans';
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px 0 0 20px;
+  line-height: 140%;
+  color: var(--color-gray);
+} 
+
+.page-blog__title h3 {
+  font-family:'PT Sans';
+  font-size: 20px;
+  margin: 0;
+  color: var(--color-dark);
+}
+
+.page-blog-title__style {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.page-blog-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.page-blog__arrow {
+  margin-left: 10px;
+}
+
+.page-blog-link a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: var(--font-size-links);
+  color: var(--color__orange);
+  transition: all 0.25s ease;
+}
+
+.page-blog-link a:hover {
+  color: var(--color__orange--hover);
+}
+
+
 
 /*подвал*/
 
