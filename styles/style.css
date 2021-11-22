@@ -250,6 +250,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 10px;
 }
 
+
 .tab__link:hover {
   color: #FF9F5B;
   transition: all 0.25s ease;
