@@ -279,6 +279,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.tabcontent__wrap-save {
+  padding-right: 25px;
+}
+
 .tabcontent__item {
   display: flex;
   align-items: center;
@@ -312,6 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .tabcontent__wrap--left {
   margin-left: 20px;
+  position: relative;
 }
 
 .tabcontent__wrap--left a {
@@ -319,6 +324,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tabcontent__btn {
+  margin-right: 20px;
+
   list-style-type: none;
 
   font-family: inherit;
