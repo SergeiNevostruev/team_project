@@ -246,12 +246,20 @@ h1, h2, h3, h4, h5, h6 {
 .tab__link {
   color: var(--color__orange);
   text-decoration:none;
+  margin-top: 18px;
+  margin-right: 10px;
 }
 
 .tab__link:hover {
   color: #FF9F5B;
   transition: all 0.25s ease;
 }
+
+.tab__arrow {
+  margin-top: 18px;
+}
+
+
 
 
 /* ================= Стиль содержимого вкладки ===============*/
@@ -464,7 +472,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 20px;
   line-height: 140%;
   color: var(--color-gray);
-} 
+}
 
 .list__price {
   font-family: 'PT Sans';
@@ -570,7 +578,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   color: var(--color-white);
   font-size: 25px;
-  
+
 }
 
 .subscription p {
@@ -662,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 0 0 20px;
   line-height: 140%;
   color: var(--color-gray);
-} 
+}
 
 .page-blog__title h3 {
   font-family:'PT Sans';
