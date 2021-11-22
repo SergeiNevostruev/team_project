@@ -40,18 +40,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-dull);
 }
 
-/* layout */
-.container {
-  /* max-width: 1320px; */
-  /* width: 1320px; */
-  /* min-width: 320px; */
-  /* padding-left: 10px;
-  padding-right: 10px;
-  box-sizing: content-box; */
-  width: 1218px;
-  margin: 0 auto;
-}
-
 /* =============== Контейнер для основного контента всего сайта  =============== */
 .container-content {
   width: 1218px;
@@ -173,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =================== Стилизация вкладок =================== */
-.first-screen__tab {
+.tab__content {
   display: flex;
   align-items: center;
   margin-left: 120px;
@@ -182,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ================= Стиль кнопок, используемых для открытия содержимого вкладки ===============*/
-.first-screen__tab button {
+.tab__content button {
   background-color: inherit;
   border: none;
   outline: none;
