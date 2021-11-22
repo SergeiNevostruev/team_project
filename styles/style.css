@@ -262,6 +262,23 @@ h1, h2, h3, h4, h5, h6 {
   to {opacity: 1;}
 }
 
+.tabcontent__wrap {
+  position: relative;
+}
+
+.tabcontent__wrap-die {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
 .tabcontent__item {
   display: flex;
   align-items: center;
