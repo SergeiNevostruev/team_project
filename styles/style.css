@@ -347,6 +347,7 @@ h1, h2, h3, h4, h5, h6 {
   left: -72px;
   opacity: 0;
   transition: all 0.25s ease;
+  color: var(--color-dark);
 }
 
 .tabcontent__btn:hover span {
@@ -361,8 +362,6 @@ h1, h2, h3, h4, h5, h6 {
 .tabcontent__btn svg:hover circle{
   fill:var(--color__orange--hover);
 }
-
-
 
 .circle {
   display: inline-block;
@@ -487,14 +486,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-gray);
 }
 
-.list__price {
-  font-family: 'PT Sans';
-  font-size: 25px;
-  color: var(--color-dark);
-  margin: 0 0 0 20px;
-  font-weight: 700;
-}
-
 /*Каталог*/
 
 .page-catalog__grid {
@@ -518,6 +509,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 66px;
 }
 
 
