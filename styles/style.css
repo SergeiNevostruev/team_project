@@ -571,18 +571,19 @@ h1, h2, h3, h4, h5, h6 {
 .page-subscription {
   background-color: var(--color__orange);
   height: 400px;
-  position: relative;
+
   }
 
 .page-subscription__banner {
   position: absolute;
   top: 0;
-  right: 52%;
+  right: 55%;
   height: 100%;
-  width: 52%;
+  width: 55%;
 }
 
 .page-subscription__content {
+  position: relative;
   height: 100%;
 }
 
