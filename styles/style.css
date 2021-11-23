@@ -40,18 +40,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-dull);
 }
 
-/* layout */
-.container {
-  /* max-width: 1320px; */
-  /* width: 1320px; */
-  /* min-width: 320px; */
-  /* padding-left: 10px;
-  padding-right: 10px;
-  box-sizing: content-box; */
-  width: 1218px;
-  margin: 0 auto;
-}
-
 /* =============== Контейнер для основного контента всего сайта  =============== */
 .container-content {
   width: 1218px;
@@ -173,16 +161,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* =================== Стилизация вкладок =================== */
-.first-screen__tab {
+.tab__content {
   display: flex;
   align-items: center;
-  margin-left: 120px;
+  margin-left: 110px;
   overflow: hidden;
 }
 
 
 /* ================= Стиль кнопок, используемых для открытия содержимого вкладки ===============*/
-.first-screen__tab button {
+.tab__content button {
   background-color: inherit;
   border: none;
   outline: none;
@@ -246,12 +234,21 @@ h1, h2, h3, h4, h5, h6 {
 .tab__link {
   color: var(--color__orange);
   text-decoration:none;
+  margin-top: 18px;
+  margin-right: 10px;
 }
+
 
 .tab__link:hover {
   color: #FF9F5B;
   transition: all 0.25s ease;
 }
+
+.tab__arrow {
+  margin-top: 18px;
+}
+
+
 
 
 /* ================= Стиль содержимого вкладки ===============*/
@@ -263,6 +260,27 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+.tabcontent__wrap {
+  position: relative;
+}
+
+.tabcontent__wrap-die {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.tabcontent__wrap-save {
+  padding-right: 25px;
 }
 
 .tabcontent__item {
@@ -298,6 +316,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .tabcontent__wrap--left {
   margin-left: 20px;
+  position: relative;
 }
 
 .tabcontent__wrap--left a {
@@ -305,6 +324,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .tabcontent__btn {
+  margin-right: 20px;
+
   list-style-type: none;
 
   font-family: inherit;
@@ -464,7 +485,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 20px;
   line-height: 140%;
   color: var(--color-gray);
-} 
+}
 
 .list__price {
   font-family: 'PT Sans';
@@ -570,7 +591,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   color: var(--color-white);
   font-size: 25px;
-  
+
 }
 
 .subscription p {
@@ -662,7 +683,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 0 0 20px;
   line-height: 140%;
   color: var(--color-gray);
-} 
+}
 
 .page-blog__title h3 {
   font-family:'PT Sans';
