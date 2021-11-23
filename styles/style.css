@@ -571,20 +571,32 @@ h1, h2, h3, h4, h5, h6 {
 .page-subscription {
   background-color: var(--color__orange);
   height: 400px;
+  position: relative;
   }
 
 .page-subscription__banner {
-  margin-left: -150px;
+  position: absolute;
+  top: 0;
+  right: 52%;
+  height: 100%;
+  width: 52%;
 }
 
 .page-subscription__content {
+  height: 100%;
+}
+
+.page-subscription__row {
   display: flex;
+  justify-content: flex-end;
+  height: 100%;
   align-items: center;
 }
 
 .subscription {
   width: 440px;
-  margin: 0 10px 0 73px;
+  margin: 0 50px 0 73px;
+  flex-shrink: 0;
 }
 
 .subscription h2 {
