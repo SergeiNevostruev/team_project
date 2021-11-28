@@ -87,7 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-header--height {
   max-width: 1320px; /*чтобы содержимое сжималось*/
-  min-width: 320px;
   padding-left: 10px;
   padding-right: 10px;
   box-sizing: content-box;
@@ -846,6 +845,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 11px;
 }
 
+.mailto-adaptive {
+  display: none;
+}
+
 .page-footer__mailto-social {
   height: 100%;
   width: 43%;
@@ -1122,5 +1125,45 @@ h1, h2, h3, h4, h5, h6 {
 
 /* mobale small */
 @media screen and (max-width: 450px){
-  
+   /* футер */
+
+  .page-footer--border-bottom {
+    border-bottom: 1px var(--color-border) solid;
+  }
+
+   .page-footer--height {
+     height: 78px;
+   }
+
+
+   .page-footer__mailto {
+     display: none;
+   }
+
+   .mailto-adaptive {
+    display: block;
+    margin: 30px 0 20px;
+  }
+
+  .page-footer__logo {
+    padding-top: 0;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .page-footer__social {
+    padding-top: 0;
+    border-left: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+   .page-footer__mailto-social {
+     width: auto;
+   }
+
+   .social__item {
+     margin: 0 0 0 15px;
+   }
 }
