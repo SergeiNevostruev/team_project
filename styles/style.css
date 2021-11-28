@@ -4,7 +4,7 @@
   --color__orange: #ED6303;
   --color__orange--hover: #fba266;
   --color-white: #ffffff;
-  --color-white--opt: rgba(255,255,255,0.7);
+  --color-white--opt: rgba(255, 255, 255, 0.95);
   --color-gray: #B6B1A3;
   --color-dark: #070707;
 
@@ -961,7 +961,7 @@ h1, h2, h3, h4, h5, h6 {
   .page-header__nav {
     position: absolute;
     margin-left: 0;
-    top: 80px;
+    top: 70px;
     opacity: 0;
     visibility: hidden;
   }
