@@ -514,6 +514,14 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: flex-end;
 }
 
+.aboutcompany-images__ad {
+  display: none;
+}
+
+.aboutcompany-images__right-img-ad {
+  display: none;
+}
+
 .aboutcompany-images__right img {
   height: 366px;
   width: 100%; 
@@ -1027,6 +1035,8 @@ h1, h2, h3, h4, h5, h6 {
 
   /* main  */
 
+  /* первый блок */
+
   .tabcontent__btn span {
     font-size: 16px;
   }
@@ -1058,6 +1068,15 @@ h1, h2, h3, h4, h5, h6 {
 
   .circle__btn {
     font-size: 16px;
+  }
+
+  /* Техника с душой */
+  .aboutcompany-info {
+    justify-content: space-between;
+  }
+
+  .aboutcompany__text {
+    margin-left: 20px;
   }
 
 /* футер */
@@ -1105,6 +1124,8 @@ h1, h2, h3, h4, h5, h6 {
 
   
   /* main */
+
+  /* первый блок */
   .tabcontent__btn span {
     display: none;
   }
@@ -1133,6 +1154,21 @@ h1, h2, h3, h4, h5, h6 {
   .tabcontent__wrap  img {
     max-width: 330px;
   }
+
+    /* Техника с душой */
+    .aboutcompany-info {
+      flex-wrap: wrap;
+    }
+
+    .aboutcompany-images__right-img-ad {
+      display: block;
+    }
+
+    .aboutcompany-images__right-img-dec {
+      display: none;
+    }
+  
+
 
   /* футер */
   .page-footer__menu{
@@ -1181,6 +1217,7 @@ h1, h2, h3, h4, h5, h6 {
  
 
   /* main */
+  /* Первый блок */
   .style__title {
     font-size: 35px;
     margin-left: 40px;
@@ -1232,6 +1269,11 @@ h1, h2, h3, h4, h5, h6 {
 
   .tab__content {
     margin-left: 0;
+  }
+
+  /* Техника с душой */
+  .aboutcompany-images__left {
+    display: none;
   }
   
   /* футер */
@@ -1289,6 +1331,19 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 285px;
   }
+
+    /* Техника с душой */
+    .aboutcompany-images__right {
+      display: none;
+    }
+
+    .aboutcompany-images__ad {
+      display: block;
+    }
+
+    .aboutcompany-images__ad img {
+      width: 100%;
+    }
 
    /* футер */
 
