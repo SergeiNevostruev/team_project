@@ -563,6 +563,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-catalog__grid {
   display: grid;
+  justify-content: space-around;
   grid-gap: 2.5%;
   grid: repeat(2, minmax(529px, 1fr)) / repeat(4, calc(25% - 15px ));
   }
@@ -1113,6 +1114,11 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 4 / span 3;   
   }
 
+  .tabcontent__wrap-catalog img {
+    height: 529px;  
+   }
+
+
 /* футер */
   .page-footer__logo {
     padding-top: 30px;
@@ -1185,6 +1191,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 40%;
   }
 
+  
   .tabcontent__wrap  img {
     max-width: 330px;
   }
@@ -1224,6 +1231,7 @@ h1, h2, h3, h4, h5, h6 {
     order: 5;
     grid-column: 2 ;    
   }
+
   .catalog-item__box5 {
     order: 3;
     grid-column: 1/ span 2;
@@ -1235,6 +1243,14 @@ h1, h2, h3, h4, h5, h6 {
   .catalog-item__box7 {
     order: 7;   
     grid-column: 2;   
+  }
+
+  .tabcontent__wrap-catalog img {
+    height: auto;
+   }
+
+  .page-catalog__btn {
+    margin-top: 100px;
   }
 
 
@@ -1258,6 +1274,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   
 }
+
+@media screen and (max-width: 700px){
+  .page-catalog__btn {
+    margin-top: 170px;
+  }
+}
+
 
 /* mobale wibe */
 
@@ -1344,6 +1367,36 @@ h1, h2, h3, h4, h5, h6 {
   .aboutcompany-images__left {
     display: none;
   }
+
+
+  /* каталог */
+
+  .page-catalog__grid {
+    display: block;
+  }
+
+  .catalog-item__box2 {
+    display: none;
+  }
+
+  .catalog-item__box6 {
+    display: none;
+  }
+  .catalog-item__box7 {
+    display: none;
+  }
+
+  .tabcontent__wrap-catalog img {
+    height: 366px;
+   }
+
+   .catalog-item {
+     margin-top: 20px;
+   }
+
+  /* .page-catalog__btn {
+    margin-top: 100px;
+  } */
   
   /* футер */
   .page-footer__nav {
