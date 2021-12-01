@@ -789,8 +789,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-blog__item {
-  width: 386px;
+  max-width: 386px;
+  width: 100%;
+  margin-right: 20px;
 }
+
+.page-blog__item:last-child {
+  margin-right: 0;
+}
+
+
+.page-blog__item-1,
+.page-blog__item-2,
+.page-blog__item-3 {
+  display: block;
+  width: 100%;
+}
+
+.page-blog__item-1-1000,
+.page-blog__item-1-320,
+.page-blog__item-3-1000,
+.page-blog__item-3-320 {
+  display: none;
+}
+
 
 .page-blog__text {
   display: flex;
@@ -1204,7 +1226,7 @@ h1, h2, h3, h4, h5, h6 {
   /*подписка*/
 
   .page-subscription__banner {
-    margin-left: 0;
+    margin-left: -60px;
   }
 
   .page-subscription__banner-img {
@@ -1214,6 +1236,31 @@ h1, h2, h3, h4, h5, h6 {
   .page-subscription__banner-img1000 {
     display: block;
   }
+
+  /* блог */
+
+  .page-blog__item-2-ad {
+    display: none;
+  }
+
+  .page-blog__item-1-1000,
+  .page-blog__item-3-1000 {
+    display: block;
+  width: 100%;
+}
+
+  .page-blog__item-1,
+  .page-blog__item-3 {
+  display: none;
+  }
+
+  .page-blog__item {
+    max-width: none;
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  
 
 
 /* футер */
@@ -1380,6 +1427,22 @@ h1, h2, h3, h4, h5, h6 {
   .page-subscription__banner {
     margin-left: -250px;
   }
+
+
+    /* блог */
+
+    .page-blog__item-1-1000,
+    .page-blog__item-3-1000 {
+      display: none;
+  }
+  
+    .page-blog__item-1,
+    .page-blog__item-3 {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
 
 
 
@@ -1579,6 +1642,29 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 30px;
   }
 
+      /* блог */
+      .page-blog-list {
+        flex-direction: column;
+      }
+
+      .page-blog__item{
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .page-blog__item-1-1000,
+      .page-blog__item-3-1000 {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+      .page-blog__item-1,
+      .page-blog__item-3 {
+        display: none;
+      }
+
   
   /* футер */
   .page-footer__nav {
@@ -1675,6 +1761,21 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     padding-right: 30px;
   }
+
+    /* блог */
+
+    .page-blog__item-1-320,
+    .page-blog__item-3-320 {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+  }
+
+    .page-blog__item-1-1000,
+    .page-blog__item-3-1000 {
+      display: none;
+    }
 
    /* футер */
 
