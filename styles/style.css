@@ -564,7 +564,7 @@ h1, h2, h3, h4, h5, h6 {
 .page-catalog__grid {
   display: grid;
   justify-content: space-around;
-  grid-gap: 2.5%;
+  grid-gap: 30px;
   grid: repeat(2, minmax(529px, 1fr)) / repeat(4, calc(25% - 15px ));
   }
 
