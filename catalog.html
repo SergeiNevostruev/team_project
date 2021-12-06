@@ -16,6 +16,7 @@
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/hamburgers.css">
+  <link rel="stylesheet" href="styles/style_catalog.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="page">
@@ -101,10 +102,664 @@
 
   <!-- контент -->
   <main>
+    <div class="breadcrumbs-catalog container-content">
+      <a class="breadcrumbs-catalog__previous" href="index.html">Главная</a>
+      <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="2" cy="2" r="2" fill="#E9E9E9"/>
+        </svg>
+      <a class="breadcrumbs-catalog__previous" href="catalog.html">Каталог</a>        
+    </div>
 
 
-    <section class="container-content">
-      Каталог
+    <section class="container-content catalog">
+      <h1 class="style__title">КАТАЛОГ</h1>
+      <div class="catalog__control-panel flex-sb-aicenter">
+        <div class="filter">
+          <span class="filter__text">Фильтр</span>
+          <a lass="filter__svg" href="#">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.5 1.90381L6.5 11.0962" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.90381 6.5L11.0962 6.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> 
+          </a>           
+        </div>
+        <div class="sort flex-sb-aicenter">
+          <div class="sort__control">
+            <span class="sort__control-text">Сортировать</span>
+            <a class="sort__control-menu" href="#">
+              <span>по годам</span>
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.88185 5.42749L4.6206 7.16624L5.68227 8.23332C6.13185 8.68291 6.8631 8.68291 7.31269 8.23332L10.1185 5.42749C10.4869 5.05916 10.2214 4.43082 9.70685 4.43082L6.6681 4.43082L3.29352 4.43082C2.77352 4.43082 2.51352 5.05916 2.88185 5.42749Z" fill="#333333"/>
+              </svg>            
+            </a>
+          </div>
+          <div class="sort__catalog-grid grid">
+            <a class="grid-view1" href="#">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.9167 11.3542V4.27084C22.9167 2.70834 22.25 2.08334 20.5938 2.08334H16.3854C14.7292 2.08334 14.0625 2.70834 14.0625 4.27084V11.3542C14.0625 12.9167 14.7292 13.5417 16.3854 13.5417H20.5938C22.25 13.5417 22.9167 12.9167 22.9167 11.3542Z" stroke="#ED6303" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.9167 20.7292V18.8542C22.9167 17.2917 22.25 16.6667 20.5938 16.6667H16.3854C14.7292 16.6667 14.0625 17.2917 14.0625 18.8542V20.7292C14.0625 22.2917 14.7292 22.9167 16.3854 22.9167H20.5938C22.25 22.9167 22.9167 22.2917 22.9167 20.7292Z" stroke="#ED6303" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.9377 13.6458V20.7292C10.9377 22.2917 10.271 22.9167 8.61475 22.9167H4.40641C2.75016 22.9167 2.0835 22.2917 2.0835 20.7292V13.6458C2.0835 12.0833 2.75016 11.4583 4.40641 11.4583H8.61475C10.271 11.4583 10.9377 12.0833 10.9377 13.6458Z" stroke="#ED6303" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.9377 4.27084V6.14584C10.9377 7.70834 10.271 8.33334 8.61475 8.33334H4.40641C2.75016 8.33334 2.0835 7.70834 2.0835 6.14584V4.27084C2.0835 2.70834 2.75016 2.08334 4.40641 2.08334H8.61475C10.271 2.08334 10.9377 2.70834 10.9377 4.27084Z" stroke="#ED6303" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                
+            </a>
+            <a  class="grid-view2" href="#">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.9167 8.87501V4.14584C22.9167 2.67709 22.25 2.08334 20.5938 2.08334H16.3854C14.7292 2.08334 14.0625 2.67709 14.0625 4.14584V8.86459C14.0625 10.3438 14.7292 10.9271 16.3854 10.9271H20.5938C22.25 10.9375 22.9167 10.3438 22.9167 8.87501Z" stroke="#B6B1A3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.9167 20.5938V16.3854C22.9167 14.7292 22.25 14.0625 20.5938 14.0625H16.3854C14.7292 14.0625 14.0625 14.7292 14.0625 16.3854V20.5938C14.0625 22.25 14.7292 22.9167 16.3854 22.9167H20.5938C22.25 22.9167 22.9167 22.25 22.9167 20.5938Z" stroke="#B6B1A3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.9377 8.87501V4.14584C10.9377 2.67709 10.271 2.08334 8.61475 2.08334H4.40641C2.75016 2.08334 2.0835 2.67709 2.0835 4.14584V8.86459C2.0835 10.3438 2.75016 10.9271 4.40641 10.9271H8.61475C10.271 10.9375 10.9377 10.3438 10.9377 8.87501Z" stroke="#B6B1A3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.9377 20.5938V16.3854C10.9377 14.7292 10.271 14.0625 8.61475 14.0625H4.40641C2.75016 14.0625 2.0835 14.7292 2.0835 16.3854V20.5938C2.0835 22.25 2.75016 22.9167 4.40641 22.9167H8.61475C10.271 22.9167 10.9377 22.25 10.9377 20.5938Z" stroke="#B6B1A3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="page-catalog__grid">
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box1">
+          <img src="images/catalog/combi-dl5.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Бритва <br>
+              BRAUN Combi DL 5
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Чувство» 1957
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              18 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box2">
+          <img src="images/catalog/mp32.png" alt="mp32">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Соковыжималка <br>
+              BRAUN MP 32
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Частота» 1963
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              63 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box3">
+          <img src="images/catalog/bn0032.png" alt="bn0032">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Часы <br>
+              BRAUN BN 0032
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Восход» 1960
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              13 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box4">
+          <img src="images/catalog/hld4.png" alt="hld4">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Фен для волос <br>
+              BRAUN HLD 4
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Милена» 1961
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              29 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item--big catalog-item__box5">
+          <img src="images/catalog/nizo-801l.png" alt="super nizo-801l">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Камера super<br>
+              nizo 801 l
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Звездное небо» 1957
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              220 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box6">
+          <img src="images/catalog/d46.png" alt="d46">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Проектор слайдов<br>
+              BRAUN D 46
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Кварц» 1965
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              56 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box7">
+          <img src="images/catalog/t2.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Зажигалка <br>
+              BRAUN T 2
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Мини скульптуры» 1956
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              14 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box7">
+          <img src="images/catalog/t2.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Зажигалка <br>
+              BRAUN T 2
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Мини скульптуры» 1956
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              14 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box7">
+          <img src="images/catalog/t2.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Зажигалка <br>
+              BRAUN T 2
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Мини скульптуры» 1956
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              14 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box7">
+          <img src="images/catalog/t2.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Зажигалка <br>
+              BRAUN T 2
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Мини скульптуры» 1956
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              14 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box7">
+          <img src="images/catalog/t2.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Зажигалка <br>
+              BRAUN T 2
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Мини скульптуры» 1956
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              14 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+    </section>
+
+    <section class="container-content catalog">
+      <div class="page-catalog__grid">
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box1">
+          <img src="images/catalog/combi-dl5.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Бритва <br>
+              BRAUN Combi DL 5
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Чувство» 1957
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              18 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box2">
+          <img src="images/catalog/mp32.png" alt="mp32">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Соковыжималка <br>
+              BRAUN MP 32
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Частота» 1963
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              63 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box3">
+          <img src="images/catalog/bn0032.png" alt="bn0032">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Часы <br>
+              BRAUN BN 0032
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Восход» 1960
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              13 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box4">
+          <img src="images/catalog/hld4.png" alt="hld4">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Фен для волос <br>
+              BRAUN HLD 4
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Милена» 1961
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              29 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item--big catalog-item__box5">
+          <img src="images/catalog/nizo-801l.png" alt="super nizo-801l">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Камера super<br>
+              nizo 801 l
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Звездное небо» 1957
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              220 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box6">
+          <img src="images/catalog/d46.png" alt="d46">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Проектор слайдов<br>
+              BRAUN D 46
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Кварц» 1965
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              56 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box7">
+          <img src="images/catalog/t2.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Зажигалка <br>
+              BRAUN T 2
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Мини скульптуры» 1956
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              14 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box7">
+          <img src="images/catalog/t2.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Зажигалка <br>
+              BRAUN T 2
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Мини скульптуры» 1956
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              14 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box7">
+          <img src="images/catalog/t2.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Зажигалка <br>
+              BRAUN T 2
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Мини скульптуры» 1956
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              14 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box7">
+          <img src="images/catalog/t2.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Зажигалка <br>
+              BRAUN T 2
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Мини скульптуры» 1956
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              14 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box7">
+          <img src="images/catalog/t2.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Зажигалка <br>
+              BRAUN T 2
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Мини скульптуры» 1956
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              14 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+    </section>
+
+    <section class="container-content catalog">
+      <div class="page-catalog__grid">
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box1">
+          <img src="images/catalog/combi-dl5.png" alt="combi-dl5">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Бритва <br>
+              BRAUN Combi DL 5
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Чувство» 1957
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              18 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box2">
+          <img src="images/catalog/mp32.png" alt="mp32">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Соковыжималка <br>
+              BRAUN MP 32
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Частота» 1963
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              63 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
+        <div class="tabcontent__wrap-catalog catalog-item catalog-item__box3">
+          <img src="images/catalog/bn0032.png" alt="bn0032">
+          <div class="tabcontent__wrap--left">
+            <h3>
+              Часы <br>
+              BRAUN BN 0032
+            </h3>
+            <span class="tabcontent__subtitle">
+              «Восход» 1960
+            </span>
+          </div>
+          <div class="tabcontent__wrap--left flex-sb-aicenter">
+            <span class="tabcontent__price">
+              13 000 ₽
+            </span>
+            <a class="tabcontent__btn" href="#!">
+              <span>
+                Купить
+              </span>
+            <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#ED6303"/><path d="M9.697 15h10.606M15 20.303V9.697" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>  <!-- tabcontent__wrap -->
+
     </section>
 
 
