@@ -102,15 +102,17 @@
 
   <!-- контент -->
   <main>
-    <div class="breadcrumbs-catalog container-content">
-      <a class="breadcrumbs-catalog__previous" href="index.html">Главная</a>
-      <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="2" cy="2" r="2" fill="#E9E9E9"/>
-        </svg>
-      <a class="breadcrumbs-catalog__previous" href="catalog.html">Каталог</a>        
+    <div class="container-content breadcrumbs">
+      <div class="breadcrumbs-catalog">
+        <a class="breadcrumbs-catalog__previous" href="index.html">Главная</a>
+        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="2" cy="2" r="2" fill="#E9E9E9"/>
+          </svg>
+        <a class="breadcrumbs-catalog__this" href="catalog.html">Каталог</a>  
+      </div>
     </div>
 
-
+    <!-- Первая часть каталога -->
     <section class="container-content catalog">
       <h1 class="style__title">КАТАЛОГ</h1>
       <div class="catalog__control-panel flex-sb-aicenter">
@@ -153,7 +155,7 @@
           </div>
         </div>
       </div>
-      <div class="page-catalog__grid">
+      <div class="page-catalog__grid container-content">
         <div class="tabcontent__wrap-catalog catalog-item catalog-item__box1">
           <img src="images/catalog/combi-dl5.png" alt="combi-dl5">
           <div class="tabcontent__wrap--left">
@@ -419,8 +421,30 @@
         </div>  <!-- tabcontent__wrap -->
     </section>
 
+    <!-- Уникальные продукты первая часть -->
+    
+    <section class="unique-products">
+      <div class="unique-products__section container-content flex-sb-aicenter">
+        <div class="unique-products__text">
+          <h2>СОКОВЫЖИМАЛКА<br>BRAUN MP 32</h2>
+          <p>Эта работа была создана под руководством Дитера Рамса, который был главным руководителем отдела дизайна в Braun в 1961-1995 годах. Времена простаты.</p>
+          <a href="#">
+            <span>Подробнее</span>
+            <svg class="unique-products__arrow" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.01248 2.4707L9.54165 4.99987L7.01248 7.52904" stroke="#ED6303" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.39999 5L9.39999 5" stroke="#ED6303" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        <div class="unique-products__poster"> 
+          <img src="images/page-catalog/braun-mp-32.png" alt="СОКОВЫЖИМАЛКА BRAUN MP 32">
+        </div>
+      </div>
+    </section>
+
+    <!-- Вторая часть каталога -->
     <section class="container-content catalog">
-      <div class="page-catalog__grid">
+      <div class="page-catalog__grid container-content">
         <div class="tabcontent__wrap-catalog catalog-item catalog-item__box1">
           <img src="images/catalog/combi-dl5.png" alt="combi-dl5">
           <div class="tabcontent__wrap--left">
@@ -686,8 +710,31 @@
         </div>  <!-- tabcontent__wrap -->
     </section>
 
+    <!-- Уникальные продукты вторая часть -->
+    
+    <section class="unique-products">
+      <div class="unique-products__section container-content flex-aicenter">
+        <div class="unique-products__poster"> 
+          <img src="images/page-catalog/atelier-1.png" alt="СОКОВЫЖИМАЛКА BRAUN MP 32">
+        </div>   
+
+        <div class="unique-products__text">
+          <h2>АУДИОСИСТЕМА<br>ATELIER 1</h2>
+          <p>Система состоит из поворотного стола P1, кассетной деки C1, усилителя A1, тюнера T1 и базы. Подписано печатным знаком производителя с обратной стороны двух элементов.</p>
+          <a href="">
+            <span>Подробнее</span>
+            <svg class="unique-products__arrow" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.01248 2.4707L9.54165 4.99987L7.01248 7.52904" stroke="#ED6303" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1.39999 5L9.39999 5" stroke="#ED6303" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>    
+
+    <!-- Третья часть каталога -->
     <section class="container-content catalog">
-      <div class="page-catalog__grid">
+      <div class="page-catalog__grid container-content">
         <div class="tabcontent__wrap-catalog catalog-item catalog-item__box1">
           <img src="images/catalog/combi-dl5.png" alt="combi-dl5">
           <div class="tabcontent__wrap--left">

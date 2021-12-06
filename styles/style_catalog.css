@@ -1,0 +1,158 @@
+:root {
+    --color-border: #E9E9E9;
+    --color-dull: #333333;
+    --color__orange: #ED6303;
+    --color__orange--hover: #fba266;
+    --color-white: #ffffff;
+    --color-white--opt: rgba(255, 255, 255, 0.95);
+    --color-gray: #B6B1A3;
+    --color-gray-back: #F2F2F2;    
+    --color-dark: #070707;
+  
+    --font-size-links: 18px;
+    --font-size-title: 48px;
+  }
+  
+  
+  /* common */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  div, ul, span, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    font-family: 'PT Sans', sans-serif;
+    font-size: var(--font-size-links);
+    font-weight: 400;
+    color: var(--color-dull);
+  }
+
+/* хлебные крошки */
+
+.breadcrumbs-catalog {
+    margin: 22px 0 0 120px;
+}
+
+
+.breadcrumbs-catalog a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.breadcrumbs-catalog__previous {
+    color: var(--color-dull);
+}
+
+.breadcrumbs-catalog__previous:hover {
+    color: var(--color__orange--hover);
+}
+
+.breadcrumbs-catalog__this {
+    color: var(--color__orange);
+}
+
+.breadcrumbs-catalog__this:hover {
+    color: var(--color__orange--hover);
+}
+
+
+/* заголовок */
+
+.catalog h1 {
+    margin-top: 0;
+}
+
+
+/* панель контроля сортировки и фильтрации каталога */
+
+.sort a {
+    text-decoration: none;
+}
+
+.catalog__control-panel {
+    padding-bottom: 10px;
+    margin-bottom: 60px;
+    border-bottom: 2px var(--color-border) solid;
+}
+
+.sort__catalog-grid {
+    margin-left: 50px;
+}
+
+.sort__control-text {
+    font-size: 12px;
+    color: var(--color-gray);
+}
+
+.sort__control-menu span {
+    color: var(--color-dull);
+    font-size: 12px;
+}
+
+
+
+  /* уникальные товары */
+
+.unique-products {
+    margin: 100px 0;
+    background: var(--color-gray-back);
+}
+
+.flex-aicenter {
+    display: flex;
+    align-items: center;
+}
+
+.unique-products__text {
+    width: 45%;
+    margin-left: 20px;
+}
+
+.unique-products__text h2 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-dark);
+    padding-bottom: 80px;
+    margin-bottom:20px;
+    border-bottom: 2px var(--color-border) solid;
+}
+
+.unique-products__text p { 
+    font-size: 16px;
+    margin-bottom: 37px;
+    max-width: 430px;
+}
+
+.unique-products__text a {
+    font-size: 18px;
+    color: var(--color__orange);
+    text-decoration: none;
+}
+
+.unique-products__text a:hover {
+    color: var(--color__orange--hover);
+}
+
+.unique-products__text a:hover path{
+    stroke: var(--color__orange--hover);
+}
