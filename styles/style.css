@@ -1482,17 +1482,18 @@ h1, h2, h3, h4, h5, h6 {
   .page-header__tel {
     display: none;
   }
-  .header-icons__ac {
+  /* .header-icons__ac {
     display: none;
-  }
+  } */
 
+  
   .page-header__logo-two {
     padding-left: 0;
     justify-content: center;
   }
 
   .header-icons a {
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
   .page-header__border {
@@ -1682,6 +1683,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* mobale small */
 @media screen and (max-width: 450px){
+
+  .header-icons a {
+    padding-left: 5px;
+  }
 
    /* main */
 
