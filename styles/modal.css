@@ -224,7 +224,6 @@
     border-radius: 5px;
     background: var(--color__orange);
     color: var(--color-white);
-    text-transform: uppercase;
     cursor: pointer;
     transition: all 0.25s ease;
   }
@@ -294,13 +293,13 @@
       top: 5px;
       right: 6px;
       display: inline-block;
-      width: 20px;
+      width: 30px;
       height: 20px;
-      background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+      background: url(../svg/ass.svg) 0 0 no-repeat;
   }
   
   .password-control.view {
-      background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+      background: url(../svg/assclose.svg) 0 0 no-repeat;
   }
   
   #message {
