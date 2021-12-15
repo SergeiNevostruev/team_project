@@ -165,14 +165,7 @@
     border-bottom: 2px solid var(--color-border)
   }
   
-  /* .payment-card {
-    border: 2px solid var(--color-light)
-  }
-  
-  .payment-card.is-open {
-    border: 2px solid var(--color-white)
-  }
-   */
+
   .payment-card.is-open .payment-card__content {
     display: block;
   }
@@ -192,9 +185,9 @@
     background: var(--color__orange--opt);
   }
   
-  .payment-card__toggle:focus-visible {
+  /* .payment-card__toggle:focus-visible {
     outline: 1px dotted var(--color-white);
-  }
+  } */
   
   .payment-card__toggle-icon {
     width: 48px;
