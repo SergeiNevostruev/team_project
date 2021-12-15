@@ -2,6 +2,7 @@
     --color-border: #E9E9E9;
     --color-dull: #333333;
     --color__orange: #ED6303;
+    --color__orange--opt: rgba(237, 99, 3, 0.1);
     --color__orange--hover: #fba266;
     --color-white: #ffffff;
     --color-white--opt: rgba(255, 255, 255, 0.95);
@@ -20,6 +21,7 @@
 .delivery-advertising {
     background: var(--color__orange);
     padding: 70px 0;
+    margin-bottom: 60px;
 }
 
 .delivery-advertising__section {
@@ -41,6 +43,10 @@
     color: var(--color-white);
     font-size: 40px;
     margin-bottom: 54px;
+}
+
+.delivery h1 {
+    margin-top: 0;
 }
 
 .delivery-advertising__section-icon {
@@ -66,5 +72,62 @@
 
 .advertising-icon__item:last-child span {
     max-width: 160px;
+}
+
+/* блок доставка курьером */
+
+
+
+.delivery-style__title {
+    color: var(--color-dull);
+    font-size: 35px;
+    margin: 0 0 40px 120px;
+}
+
+.courier-delivery__section {
+    display: flex;
+    align-items: center;
+    background: var(--color__orange--opt);
+    margin-bottom: 60px;
+}
+
+.courier-delivery__section-text {
+    max-width: 583px;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.courier-delivery__section-img {
+    max-width: 583px;
+    width: 50%;
+}
+
+.delivery-dec {
+    display: block;
+    width: 100%;
+}
+
+.delivery-1000,
+.delivery-780,
+.delivery-480,
+.delivery-320 {
+    display: none;
+}
+
+.courier-delivery__section-list {
+    padding-left: 20px;
+}
+
+.courier-delivery__section-list li{
+    padding-bottom: 5px;
+    max-width: 472px;
+}
+
+.courier-delivery__section-text p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 30px;
+    max-width: 472px;
 }
 
