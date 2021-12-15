@@ -16,29 +16,29 @@
   
 /* хлебные крошки */
 
-.breadcrumbs-catalog {
+.breadcrumbs-block {
     margin: 22px 0 0 120px;
 }
 
 
-.breadcrumbs-catalog a {
+.breadcrumbs-block a {
     text-decoration: none;
     font-size: 12px;
 }
 
-.breadcrumbs-catalog__previous {
+.breadcrumbs-block__previous {
     color: var(--color-dull);
 }
 
-.breadcrumbs-catalog__previous:hover {
+.breadcrumbs-block__previous:hover {
     color: var(--color__orange--hover);
 }
 
-.breadcrumbs-catalog__this {
+.breadcrumbs-block__this {
     color: var(--color__orange);
 }
 
-.breadcrumbs-catalog__this:hover {
+.breadcrumbs-block__this:hover {
     color: var(--color__orange--hover);
 }
 

@@ -1,0 +1,70 @@
+:root {  
+    --color-border: #E9E9E9;
+    --color-dull: #333333;
+    --color__orange: #ED6303;
+    --color__orange--hover: #fba266;
+    --color-white: #ffffff;
+    --color-white--opt: rgba(255, 255, 255, 0.95);
+    --color-gray: #B6B1A3;
+    --color-gray-back: #F2F2F2;  
+    --color-dark: #070707;
+  
+    --font-size-links: 18px;
+    --font-size-title: 48px;
+  }
+
+
+
+/* рекламный блок доставки */
+
+.delivery-advertising {
+    background: var(--color__orange);
+    padding: 70px 0;
+}
+
+.delivery-advertising__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.style__title--color {
+    color: var(--color__orange);
+}
+
+.delivery-advertising__section-title {
+
+    max-width: 650px;
+    text-align: center;
+    width: 100%;
+    color: var(--color-white);
+    font-size: 40px;
+    margin-bottom: 54px;
+}
+
+.delivery-advertising__section-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 120px;
+}
+
+.advertising-icon__item {
+    display: flex;
+    align-items: center;
+}
+
+.advertising-icon__item span {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
+    max-width: 180px;
+}
+
+.advertising-icon__item:last-child span {
+    max-width: 160px;
+}
+
