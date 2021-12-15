@@ -131,3 +131,88 @@
     max-width: 472px;
 }
 
+
+/* Самовывоз */
+
+.pickup__text {
+    margin-bottom: 20px;
+    margin-left: 120px;
+    }
+
+.pickup__list{
+    padding-left: 20px;
+    margin-left: 120px;
+    margin-bottom: 60px;
+}
+
+.pickup__list li{
+    padding-bottom: 5px;
+}
+
+/* Способы оплаты */
+
+.payment-list {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 60px;
+  }
+  
+  .payment-list__item:not(:last-child) {
+    margin-bottom: 2px;
+  }
+
+  .payment-list__item:last-child.is-open {
+    border-bottom: 2px solid var(--color-border)
+  }
+  
+  /* .payment-card {
+    border: 2px solid var(--color-light)
+  }
+  
+  .payment-card.is-open {
+    border: 2px solid var(--color-white)
+  }
+   */
+  .payment-card.is-open .payment-card__content {
+    display: block;
+  }
+  
+  .payment-card.is-open .payment-card__toggle-icon{
+    transform: rotate(90deg);
+  }
+  
+  .payment-card__toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px 15px 120px;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 600;
+    background: var(--color__orange--opt);
+  }
+  
+  .payment-card__toggle:focus-visible {
+    outline: 1px dotted var(--color-white);
+  }
+  
+  .payment-card__toggle-icon {
+    width: 48px;
+    height: 48px;
+    background: url('../svg/tri.svg') no-repeat center center;
+    cursor: pointer;
+  }
+  
+  .payment-card__content {
+    display: none;
+    padding: 25px 10px 30px 120px;
+    line-height: 150%;
+  }
+  
+  .payment-card__content p {
+    margin: 0 0 14px;
+  }
+  
+  .payment-card__content p:last-child {
+    margin-bottom: 0;
+  }
