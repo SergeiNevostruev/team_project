@@ -49,7 +49,6 @@ h1, h2, h3, h4, h5, h6 {
 /* =============== Отступы для загаловков и их стилизация на всем сайте ============== */
 .style__title {
   margin: 60px 0 60px 120px;
-
   font-family: 'Tenor Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -464,11 +463,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .aboutcompany-images__left {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .aboutcompany-images__right {
-  margin-top: 86px;
+  margin-top: 90px;
 }
 
 .aboutcompany-images h2 {
@@ -519,28 +518,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*page-best-offer*/
 
@@ -661,7 +638,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 104px;
 }
 
-.page-blog-list {
+.page-list--flex {
   display: flex;
   justify-content: space-between;
   align-items:flex-start
@@ -912,3 +889,5 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-gray);
   font-size: 12px;
 }
+
+
