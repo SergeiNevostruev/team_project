@@ -21,3 +21,4 @@ function openCity(evt, cityName) {
 
   // При зарузке страницы показывает вседа активную вкладку
   document.getElementById("defaultOpen").click();
+

@@ -1,0 +1,443 @@
+:root {  
+    --color-border: #E9E9E9;
+    --color-dull: #333333;
+    --color__orange: #ED6303;
+    --color__orange--opt: rgba(237, 99, 3, 0.1);
+    --color__orange--hover: #fba266;
+    --color-white: #ffffff;
+    --color-white--opt: rgba(255, 255, 255, 0.95);
+    --color-gray: #B6B1A3;
+    --color-gray-back: #F2F2F2;  
+    --color-dark: #070707;
+  
+    --font-size-links: 18px;
+    --font-size-title: 48px;
+  }
+
+
+
+/* рекламный блок доставки */
+
+.delivery-advertising {
+    background: var(--color__orange);
+    padding: 70px 0;
+    margin-bottom: 60px;
+}
+
+.delivery-advertising__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.style__title--color {
+    color: var(--color__orange);
+}
+
+.delivery-advertising__section-title {
+
+    max-width: 650px;
+    text-align: center;
+    width: 100%;
+    color: var(--color-white);
+    font-size: 40px;
+    margin-bottom: 54px;
+}
+
+.delivery h1 {
+    margin-top: 0;
+}
+
+.delivery-advertising__section-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 120px;
+}
+
+.advertising-icon__item {
+    display: flex;
+    align-items: center;
+}
+
+.advertising-icon__item span {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
+    max-width: 180px;
+}
+
+.advertising-icon__item:last-child span {
+    max-width: 160px;
+}
+
+/* блок доставка курьером */
+
+
+
+.delivery-style__title {
+    color: var(--color-dull);
+    font-size: 35px;
+    margin: 0 0 40px 120px;
+}
+
+.courier-delivery__section {
+    display: flex;
+    align-items: center;
+    background: var(--color__orange--opt);
+    margin-bottom: 60px;
+}
+
+.courier-delivery__section-text {
+    max-width: 583px;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.courier-delivery__section-img {
+    max-width: 583px;
+    width: 50%;
+}
+
+.delivery-dec {
+    display: block;
+    width: 100%;
+}
+
+.delivery-1000,
+.delivery-780,
+.delivery-480,
+.delivery-320 {
+    display: none;
+}
+
+.courier-delivery__section-list {
+    padding-left: 20px;
+}
+
+.courier-delivery__section-list li{
+    padding-bottom: 5px;
+    max-width: 472px;
+}
+
+.courier-delivery__section-text p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 30px;
+    max-width: 472px;
+}
+
+
+/* Самовывоз */
+
+.pickup__text {
+    margin-bottom: 20px;
+    margin-left: 120px;
+    }
+
+.pickup__list{
+    padding-left: 20px;
+    margin-left: 120px;
+    margin-bottom: 60px;
+}
+
+.pickup__list li{
+    padding-bottom: 5px;
+}
+
+/* Способы оплаты */
+
+.payment-list {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 60px;
+  }
+  
+  .payment-list__item:not(:last-child) {
+    margin-bottom: 2px;
+  }
+
+  .payment-list__item:last-child.is-open {
+    border-bottom: 2px solid var(--color-border)
+  }
+  
+
+  .payment-card.is-open .payment-card__content {
+    display: block;
+  }
+  
+  .payment-card.is-open .payment-card__toggle-icon{
+    transform: rotate(90deg);
+  }
+  
+  .payment-card__toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px 15px 120px;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 600;
+    background: var(--color__orange--opt);
+  }
+  
+  
+  .payment-card__toggle-icon {
+    width: 48px;
+    height: 48px;
+    background: url('../svg/tri.svg') no-repeat center center;
+    cursor: pointer;
+  }
+  
+  .payment-card__content {
+    display: none;
+    padding: 25px 10px 30px 120px;
+    line-height: 150%;
+  }
+  
+  .payment-card__content p {
+    margin: 0 0 14px;
+  }
+  
+  .payment-card__content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .payment-card__content-card-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      list-style: none;
+      margin-top: 30px;
+  }
+
+  .card-item {
+      margin-top: 10px;
+      margin-left: 10px;
+  }
+
+  .card-item:first-child {
+      margin-left: 0;
+  }
+
+
+  /* медиазапросы */
+
+/* tablet 1000 */
+
+  @media screen and (max-width: 1125px){
+    .delivery-dec {
+        display: none;
+    }
+    
+    .delivery-1000 {
+        display: block;
+        width: 100%;
+    }
+
+    .advertising-icon__item span {
+        margin-left: 20px;
+    }
+
+    .delivery-advertising__section-title {
+        font-size: 33px;
+        max-width: 550px;
+    }
+
+    .delivery-advertising__section-icon,
+    .payment-card__content,
+    .payment-card__toggle {
+        padding-left: 60px;
+    }
+
+    .breadcrumbs-block,
+    .delivery h1,
+    .delivery-style__title,
+    .pickup__text,
+    .pickup__list   {
+        margin-left: 60px;
+    }
+
+    .card-item svg {
+        width: 85%;
+        height: 85%;
+    }
+  }
+
+    
+/* tablet 780 */
+@media screen and (max-width: 900px) {
+
+    .delivery-advertising__section-icon,
+    .payment-card__content,
+    .payment-card__toggle {
+        padding-left: 25px;
+    }
+
+    .breadcrumbs-block,
+    .delivery h1,
+    .delivery-style__title,
+    .pickup__text,
+    .pickup__list,
+    .courier-delivery__section-text   {
+        margin-left: 25px;
+    }
+    
+
+    .delivery-1000 {
+        display: none;
+    }
+    
+    .delivery-780 {
+        display: block;
+        width: 100%;
+    }
+
+    .delivery-advertising{
+        padding: 25px 0;
+    }
+
+    .delivery-advertising__section-icon {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin-left: 40%;
+    }
+
+
+    .advertising-icon__item span {
+        max-width: none;
+    }
+
+    .advertising-icon__item:last-child span {
+        max-width: none;
+    }
+
+    .advertising-icon__item {
+        margin-bottom: 30px;
+    }
+
+    .advertising-icon__item:last-child {
+        margin-bottom: 0;
+    }
+
+    .courier-delivery__section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .courier-delivery__section div {
+        width: 100%;
+    }
+
+    .courier-delivery__section-img {
+        max-width: none;
+    }
+
+    .courier-delivery__section-text {
+        padding: 40px 0 ;
+        max-width: none;
+    }
+
+     .courier-delivery__section-text p {
+        max-width: none;
+        padding-right: 30px;
+     }
+
+     .courier-delivery__section-list li{
+        padding-right: 30px;
+        max-width: none;
+    }
+
+     .payment-card__content-card-list {
+         flex-wrap: wrap;
+
+     }
+
+
+    .card-item {
+         width: 20%;
+     }
+
+
+}
+
+
+
+
+    
+/* mobale wibe */
+
+@media screen and (max-width: 620px){
+
+    .delivery-advertising__section-title {
+        display: none;
+    }
+
+    .delivery-style__title {
+        font-size: 25px;
+    }
+
+    .delivery-advertising__section-icon {
+        margin-left: 20%;
+    }
+
+    .advertising-icon__item span {
+        font-size: 16px;
+        max-width: 180px;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .delivery-780 {
+        display: none;
+    }
+    
+    .delivery-480 {
+        display: block;
+        width: 100%;
+    }
+
+    .payment-card__toggle {
+        font-size: 18px;
+        padding: 5px 10px 5px 25px;
+    }
+
+
+    .card-item svg {
+        width: 70%;
+        height: 70%;
+    }
+
+    .card-item  {
+        width: 27%;
+
+    }
+
+
+
+
+}
+
+
+    /* mobale small */
+
+@media screen and (max-width: 450px){
+
+    .delivery-480 {
+        display: none;
+    }
+    
+    .delivery-320 {
+        display: block;
+        width: 100%;
+    }
+
+
+}
+
