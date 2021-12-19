@@ -1785,6 +1785,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 30px;
   }
 
+  .subscription {
+    width: calc(100% - 15px);
+  }
+
     /* блог */
 
     .page-blog__item-1-320,
