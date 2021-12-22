@@ -295,11 +295,11 @@
       display: inline-block;
       width: 30px;
       height: 20px;
-      background: url(../svg/ass.svg) 0 0 no-repeat;
+      background: url(../svg/assclose.svg) 0 0 no-repeat;
   }
   
   .password-control.view {
-      background: url(../svg/assclose.svg) 0 0 no-repeat;
+      background: url(../svg/ass.svg) 0 0 no-repeat;
   }
   
   #message {
