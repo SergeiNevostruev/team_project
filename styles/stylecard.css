@@ -1416,13 +1416,14 @@ main {
   width: 100%;
   justify-content: space-between;
   border-bottom: 1px var(--color-border) solid;
-  margin-right: 20px;
+  margin-right: 0;
   padding-bottom: 8px;
+  z-index: -1;
 
 } 
 
 .text__center {
-  margin-right: 150px;
+  /* margin-right: 150px; */
 }
 
 .header-text {
@@ -1430,7 +1431,7 @@ main {
   justify-content: space-between;
   position: absolute;
   top: 110px;
-  width: 100%;
+  width: 95%;
   padding-right: 10px;
 }
 
