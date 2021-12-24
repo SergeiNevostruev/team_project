@@ -15,8 +15,10 @@
 /* выпадающее меню */
 
 .telephon-dropdown {
-  padding-top: 25px;
-  margin-right: 50px;
+  /* display: inline-flex;
+  align-items: center; */
+  padding-top: 30px;
+  /* margin-right: 50px; */
 }
 
 .dropbtn {
@@ -92,7 +94,7 @@
   opacity: 1;
   visibility: visible;
   background-color: var(--color-white);
-  margin-top: 30px;
+  margin-top: 29px;
   margin-left: 15px;
 }
 
@@ -136,7 +138,7 @@
 .svg-qiwi {
   transform: rotate(90deg);
   position: fixed;
-  top: 57px;
+  top: 73px;;
   /* right: 360px; */
 }
 
@@ -1213,7 +1215,7 @@ main {
 
 
 .telephon-dropdown {
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
 
 .page-border__content {
