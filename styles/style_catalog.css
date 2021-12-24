@@ -412,6 +412,9 @@
 
 /* tablet 780 */
 @media screen and (max-width: 900px) {
+    .breadcrumbs-block {
+        margin-left: 70px;
+    }
 
     .catalog__grid1 {
         grid: repeat(4, minmax(529px, 1fr)) / repeat(2, calc(45%));
@@ -571,6 +574,10 @@
 /* mobale wibe */
 
 @media screen and (max-width: 620px){
+    .breadcrumbs-block {
+        margin-left: 40px;
+    }
+
     .catalog__grid1,
     .catalog__grid2,
     .catalog__grid3 {
@@ -644,6 +651,9 @@
 /* mobale small */
 
 @media screen and (max-width: 450px){
+    .breadcrumbs-block {
+        margin-left: 0;
+    }
 
     .unique-products__poster-img1-320 {
         display: block;
