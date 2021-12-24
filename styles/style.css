@@ -17,7 +17,7 @@
 .telephon-dropdown {
   /* display: inline-flex;
   align-items: center; */
-  padding-top: 30px;
+  /* padding-top: 30px; */
   /* margin-right: 50px; */
 }
 
@@ -144,7 +144,7 @@
 .svg-qiwi {
   transform: rotate(90deg);
   position: fixed;
-  top: 73px;;
+  top: 70px;;
   /* right: 360px; */
 }
 
@@ -1245,6 +1245,7 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     visibility: visible;
     transition: all 0.5s ease;
+    z-index: 900;
   }
 
   .page-header__border {
