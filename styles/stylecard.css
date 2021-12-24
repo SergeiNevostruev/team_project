@@ -11,6 +11,138 @@
 --color-shadow: #F2F2F2;
 }
 
+
+/* выпадающее меню */
+
+.telephon-dropdown {
+  padding-top: 25px;
+  margin-right: 50px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+} 
+
+.dropdown-content {
+  list-style-type: none;
+  position: absolute;
+  z-index: 1;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  left: -30px;
+  opacity: 0;
+  overflow: hidden;
+  width: 215px;
+  height: 231px;
+  padding-top: 22px;
+  box-shadow: 0 0 3px rgb(233 233 233);
+}
+
+.dropdown-content a {
+  display: block;
+  background-color: var(--color-white);
+}
+
+.dropdown-content span {
+  display: block;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--color-dark);
+  padding-left: 24px;
+  padding-bottom: 12px;
+}
+
+.dropdown-content span:hover {
+  color: var(--color__orange--hover);
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.page-header__tools {
+  position: relative;
+  display: inline-block;
+}
+
+.tel-content span:hover {
+  color: var(--color__orange--hover);
+}
+
+.show {
+  list-style-type: none;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  left: -30px;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.show-active {
+  transition: visibility 0s 0s, opacity 0.6s ease; 
+  opacity: 1;
+  visibility: visible;
+  background-color: var(--color-white);
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+
+.icons-dropdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  width: 127px;
+  margin-left: 45px;
+}
+
+
+.span__dropdown {
+  display: block;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--color-dark);
+  padding-left: 24px;
+  padding-bottom: 25px;
+}
+
+.span__dropdown:hover {
+  color: var(--color__orange--hover);
+}
+
+
+.border__dropdown {
+  border-bottom: 1px solid var(--color-border);
+  width: 167px;
+  margin: 0 auto;
+}
+
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.3s ease;
+}
+
+.svg-qiwi {
+  transform: rotate(90deg);
+  position: fixed;
+  top: 57px;
+  /* right: 360px; */
+}
+
+
+
+
 /* =============== Отступы для загаловков и их стилизация на всем сайте ============== */
 
 .style-card__title {
@@ -1079,6 +1211,11 @@ main {
 
 /* page */
 
+
+.telephon-dropdown {
+  margin-right: 30px;
+}
+
 .page-border__content {
   display: none;
 }
@@ -1388,6 +1525,10 @@ main {
   
 /* Карточка товара */
 
+.telephon-dropdown {
+  display: none;;
+}
+
 .menu__link {
   display: none;
 }
@@ -1679,6 +1820,12 @@ main {
 /* mobale small*/ 
 
 @media screen and (max-width: 450px) {
+
+
+.telephon-dropdown {
+  display: none;;
+}
+  
 
 .page-header--height {
   min-width: 0;
